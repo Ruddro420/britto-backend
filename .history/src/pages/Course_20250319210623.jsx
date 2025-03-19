@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Category = () => {
+const Course = () => {
     return (
         <div>
             <div>
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">Course</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Add / View Category</li>
+                        <li class="breadcrumb-item active">Add / View Course</li>
                     </ol>
                     <div className="card mb-5">
                         <div className="card-body">
@@ -15,10 +15,16 @@ const Category = () => {
                                 <div className="col">
                                     <form action="">
                                         <div className="row">
-                                            <div className="col mt-3">
+                                            <div className="col-lg-4 col-sm-6 col-md-4">
                                                 <div class="form-group">
-                                                    <label className='mb-2'>Category Name</label>
-                                                    <input type="text" class="form-control" placeholder="Category Name" />
+                                                    <label className='mb-2'>Course Name</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Course Name" />
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-4 col-sm-6 col-md-4">
+                                                <div class="form-group">
+                                                    <label className='mb-2'>Course Short Bio</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Course Name" />
                                                 </div>
                                             </div>
                                         </div>
@@ -28,7 +34,7 @@ const Category = () => {
                             </div>
                         </div>
                     </div>
-                    <h6>All Course</h6>
+                    <h6>All Category</h6>
                     <div className="card">
                         <div className="card-body">
                             <table class="table">
@@ -64,4 +70,4 @@ const Category = () => {
     );
 };
 
-export default Category;
+export default Course;

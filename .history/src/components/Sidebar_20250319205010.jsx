@@ -15,14 +15,14 @@ const Sidebar = () => {
                         <div class="sb-sidenav-menu-heading">Products</div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                            Courses
+                            Products
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <Link to='/category' class="nav-link" href="layout-static.html">Add Category</Link>
-                                <Link to='/course' class="nav-link" href="layout-static.html">Add Course</Link>
-                                <Link to='/course-module' class="nav-link" href="layout-static.html">Course Module</Link>
+                                <Link to='/category' class="nav-link" href="layout-static.html">Category</Link>
+                                <Link to='/add-product' class="nav-link" href="layout-static.html">Add Product</Link>
+                                <Link to='/view-product' class="nav-link" href="layout-static.html">View Product</Link>
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#orders" aria-expanded="false" aria-controls="orders">

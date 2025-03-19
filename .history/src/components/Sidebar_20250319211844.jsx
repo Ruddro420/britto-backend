@@ -23,6 +23,7 @@ const Sidebar = () => {
                                 <Link to='/category' class="nav-link" href="layout-static.html">Add Category</Link>
                                 <Link to='/course' class="nav-link" href="layout-static.html">Add Course</Link>
                                 <Link to='/course-module' class="nav-link" href="layout-static.html">Course Module</Link>
+                                <Link to='/view-product' class="nav-link" href="layout-static.html">View Product</Link>
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#orders" aria-expanded="false" aria-controls="orders">

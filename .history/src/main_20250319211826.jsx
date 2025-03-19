@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import MainLayout from './layouts/MainLayout.jsx';
 import Dashboard from './pages/Dashboard.jsx';
+import AddProduct from './pages/AddProduct.jsx';
 import ViewProduct from './pages/ViewProduct.jsx';
 import OrderDetails from './pages/OrderDetails.jsx';
 import SingleOrderDetails from './pages/SingleOrderDetails.jsx';
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/course-module",
         element: <CourseModule />
+      },
+      {
+        path: "/add-product",
+        element: <AddProduct />
       },
       {
         path: "/view-product",
