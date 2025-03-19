@@ -75,12 +75,11 @@ export const DataProvider = ({ children }) => {
                 toast.error('Failed to add');
             }
             );
-    }
 
 
-    return (
-        <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData,addCourseModule }}>
-            {children}
-        </DataContext.Provider>
-    );
-};
+        return (
+            <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData }}>
+                {children}
+            </DataContext.Provider>
+        );
+    };

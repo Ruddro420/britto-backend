@@ -64,7 +64,7 @@ export const DataProvider = ({ children }) => {
     };
     // add course module
     const addCourseModule = (name) => {
-        axios.post(`${BASE_URL}/module/add`, name)
+        axios.post(`${BASE_URL}/course-module/add`, name)
             .then(() => {
                 getData()
                 getCourse()
@@ -75,12 +75,11 @@ export const DataProvider = ({ children }) => {
                 toast.error('Failed to add');
             }
             );
-    }
 
 
-    return (
-        <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData,addCourseModule }}>
-            {children}
-        </DataContext.Provider>
-    );
-};
+        return (
+            <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData }}>
+                {children}
+            </DataContext.Provider>
+        );
+    };

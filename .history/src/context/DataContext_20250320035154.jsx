@@ -79,7 +79,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData,addCourseModule }}>
+        <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData }}>
             {children}
         </DataContext.Provider>
     );

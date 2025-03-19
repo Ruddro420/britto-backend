@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { DataContext } from '../context/DataContext';
 
 const CourseModule = () => {
-    const { getApiData, getCourseApiData, addCourseModule } = useContext(DataContext);
+    const { getApiData, getCourseApiData,addCourseModule } = useContext(DataContext);
     const [formData, setFormData] = useState({});
     // get input data
     const handleChange = (event) => {
@@ -29,7 +29,7 @@ const CourseModule = () => {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col">
-                                    <form onSubmit={submit}>
+                                    <form action="">
                                         <div className="row">
                                             <div className="col-lg-6 col-sm-12 col-md-6 mt-3">
                                                 <div class="form-group">
