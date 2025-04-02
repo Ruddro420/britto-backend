@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { DataContext } from '../context/DataContext';
 
 const CourseModule = () => {
-    const { getApiData, getCourseApiData, addCourseModule, getModuleApiData } = useContext(DataContext);
+    const { getApiData, getCourseApiData, addCourseModule,getModuleApiData } = useContext(DataContext);
     const [formData, setFormData] = useState({});
     // get input data
     const handleChange = (event) => {
@@ -121,37 +121,25 @@ const CourseModule = () => {
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Category</th>
-                                        <th scope="col">Course Name</th>
-                                        <th scope="col">Module Name</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {
-                                        getModuleApiData.data?.map((item, index) => {
-                                            return (
-                                                <>
-                                                    <tr>
-                                                        <th scope="row">{index+1}</th>
-                                                        <td>{item.category}</td>
-                                                        <td>{item.course_name}</td>
-                                                        <td>{item.module_name}</td>
-                                                        <td>
-                                                            <span class="material-symbols-outlined btn btn-success btn-sm">
-                                                                edit
-                                                            </span>
-                                                            <span class="material-symbols-outlined btn btn-danger btn-sm ms-2">
-                                                                delete
-                                                            </span>
-                                                        </td>
-                                                    </tr>
-
-                                                </>
-                                            )
-                                        })
-                                    }
-
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>
+                                            <span class="material-symbols-outlined btn btn-success btn-sm">
+                                                edit
+                                            </span>
+                                            <span class="material-symbols-outlined btn btn-danger btn-sm ms-2">
+                                                delete
+                                            </span>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

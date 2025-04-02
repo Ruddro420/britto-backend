@@ -121,9 +121,8 @@ const CourseModule = () => {
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Category</th>
-                                        <th scope="col">Course Name</th>
-                                        <th scope="col">Module Name</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
@@ -133,10 +132,9 @@ const CourseModule = () => {
                                             return (
                                                 <>
                                                     <tr>
-                                                        <th scope="row">{index+1}</th>
-                                                        <td>{item.category}</td>
-                                                        <td>{item.course_name}</td>
-                                                        <td>{item.module_name}</td>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
                                                         <td>
                                                             <span class="material-symbols-outlined btn btn-success btn-sm">
                                                                 edit

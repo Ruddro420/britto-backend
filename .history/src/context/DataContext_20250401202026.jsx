@@ -11,7 +11,6 @@ export const DataProvider = ({ children }) => {
     // const navigate = useNavigate();
     const [getApiData, setGetApiData] = useState([]);
     const [getCourseApiData, setGetCourseApiData] = useState([]);
-    const [getModuleApiData, setGetModuleApiData] = useState([]);
 
 
     // get category
@@ -90,7 +89,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData,addCourseModule,getModuleApiData }}>
+        <DataContext.Provider value={{ getData, getApiData, addCategory, addCourse, getCourseApiData,addCourseModule }}>
             {children}
         </DataContext.Provider>
     );
